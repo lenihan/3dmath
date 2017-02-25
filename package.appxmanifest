@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
+
 <Package
   xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
   xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
@@ -6,16 +7,16 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="0e72511d-c699-4211-bdca-43dacc9e1ee7"
-    Version="1.0.0.0"
-    Publisher="CN=david" />
+    Name="76cc361c-fadd-434a-ae09-eafa9901eda1"
+    Publisher="CN=david"
+    Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="0e72511d-c699-4211-bdca-43dacc9e1ee7" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <mp:PhoneIdentity PhoneProductId="76cc361c-fadd-434a-ae09-eafa9901eda1" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>3dMath</DisplayName>
+    <DisplayName>3dmath</DisplayName>
     <PublisherDisplayName>david</PublisherDisplayName>
-    <Logo>images\storelogo.png</Logo>
+    <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
   <Dependencies>
@@ -23,24 +24,21 @@
   </Dependencies>
 
   <Resources>
-    <Resource Language="x-generate" />
+    <Resource Language="x-generate"/>
   </Resources>
 
   <Applications>
-    <Application 
-      Id="App"
-      StartPage="index.html">
-
+    <Application Id="App"
+      Executable="$targetnametoken$.exe"
+      EntryPoint="_3dmath.App">
       <uap:VisualElements
-        DisplayName="3dMath"
-        Description="3dMath"
-        BackgroundColor="transparent"
-        Square150x150Logo="images\Square150x150Logo.png"
-        Square44x44Logo="images\Square44x44Logo.png">
-
-        <uap:DefaultTile Wide310x150Logo="images\Wide310x150Logo.png" />
-        <uap:SplashScreen Image="images\splashscreen.png" />
-
+        DisplayName="3dmath"
+        Square150x150Logo="Assets\Square150x150Logo.png"
+        Square44x44Logo="Assets\Square44x44Logo.png"
+        Description="3dmath"
+        BackgroundColor="transparent">
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
+        <uap:SplashScreen Image="Assets\SplashScreen.png" />
       </uap:VisualElements>
     </Application>
   </Applications>
@@ -48,5 +46,4 @@
   <Capabilities>
     <Capability Name="internetClient" />
   </Capabilities>
-
 </Package>
